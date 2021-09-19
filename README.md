@@ -63,6 +63,6 @@ A entrega da primeira sprint foi desenvolvida utilizando-se as seguintes tecnolo
 - **Leaflet:** biblioteca JavaScript usada para construir aplicativos que envolvam mapas;
 - **Netlify:** serviço em nuvem que oferece hospedagem para aplicativos da web e sites estáticos
 
-Para acessar o site do protótipo, acesse: [https://polaris-fatec.netlify.app/](https://polaris-fatec.netlify.app/), já para acessar a documentação em PDF, estilo monografia, desenvolvida nesta sprint (onde a documentação se enquadra como um requisito não funcional do projeto), acesse [este link](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-1/documentacao.pdf)
+Para acessar o site do protótipo, acesse: [https://polaris-fatec.netlify.app/](https://polaris-fatec.netlify.app/), já para acessar a documentação em PDF, estilo monografia, desenvolvida nesta sprint (onde a documentação se enquadra como um requisito não funcional do projeto), acesse [este link](./documentacao.pdf)
 
 → [Voltar ao topo](#topo)
