@@ -16,7 +16,7 @@
 <span id="sobre">
 
 ## :bookmark_tabs: Sobre o projeto
-A partir da apresentação do desafio pela empresa Visiona, a solução desenvolvida se configura em um site para consumo de imagens de satélites em repositórios em nuvem, permitindo a manipulação, visualização e download dessas imagens, proporcionando sua análise e facilitando sua obtenção de forma fácil e rápida.
+A partir da apresentação do desafio pela empresa parceira, a solução desenvolvida se configura em um site para consumo de imagens de satélites em repositórios em nuvem, permitindo a manipulação, visualização e download dessas imagens, proporcionando sua análise e facilitando sua obtenção de forma fácil e rápida.
 > _Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos envolvidos_
 
 :pushpin: Status do Projeto: **Em andamento** :construction:
@@ -50,7 +50,7 @@ Cada entrega foi realizada a partir da criação de uma **tag**. Observe a rela�
 <span id="prototipo">
 
 ## :desktop_computer: Protótipo
-Como parte do planejamento do projeto foram criados wireframes e mockups para idealização do layout, que, ao ser validado pelo cliente, foi aplicado em um protótipo construído em React, possibilitando a interação do usuário com a interface, porém sem a utilização das funcionaidades reais. O resultado pode ser conferido pela demonstração abaixo:
+Como parte do planejamento do projeto foram criados wireframes e mockups para idealização do layout, que, ao ser validado pelo cliente, foi aplicado em um protótipo construído em React, possibilitando a interação do usuário com a interface, porém sem a utilização das funcionalidades reais. O resultado pode ser conferido pela demonstração abaixo:
     
 <p align="center"> <img src="./demo.gif" /></p>
 
