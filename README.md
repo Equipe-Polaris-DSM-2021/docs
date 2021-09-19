@@ -22,7 +22,7 @@ A partir da apresentação do desafio pela empresa parceira, a solução desenvo
 :pushpin: Status do Projeto: **Em andamento** :construction:
 
 ### Entregas de Sprints
-Cada entrega foi realizada a partir da criação de uma **tag**. Observe a relação a seguir:
+Cada entrega foi realizada a partir da criação de uma **tag** em cada repositório (API e web), além da criação de uma branch neste repositório com um relatório completo de tudo o que foi desenvolvido. Observe a relação a seguir:
 | Sprint | Previsão   | Status       | Histórico                                         |
 |:------:|:----------:|:------------:|:-------------------------------------------------:|
 | 01     | 19/09/2021 | Concluída    | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-01) |
