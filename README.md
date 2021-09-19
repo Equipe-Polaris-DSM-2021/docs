@@ -3,9 +3,10 @@
 <h1 align="center">Sprint 1: 30/08/2021 a 19/09/2021</h1>
 
 <p align="center">
-    <a href="#objetivos">Objetivos da sprint</a>  |   
-    <a href="#entregas">Entregas</a>  |  
-    <a href="#prototipo">Demonstração</a>
+    <a href="#objetivos">Objetivos da sprint</a> &nbsp |&nbsp &nbsp
+    <a href="#entregas">Entregas</a> &nbsp |&nbsp &nbsp 
+    <a href="#prototipo">Demonstração</a> &nbsp |&nbsp &nbsp 
+    <a href="#links">Links úteis</a>
 </p>
 
 O projeto se baseia na construção de um site capaz de consumir imagens de satélite armazenadas em repositórios públicos, permitindo sua visualização e manipulação, bem como o download com aplicação de determinados filtros disponíveis, pensando nisso a primeira sprint se deu com a aplicação de horas massivamente em pesquisas sobre o contexto, técnicas e tecnologias bem como foi aplicado esforços para levantamento e refinamento de requisitos, gerando backlogs ordanados e priorizados a partir da visão do cliente, e, para a entrega, um protótipo visando validar as expectativas entre todas as partes envolvidas no projeto, logo, cliente, time e instituição de ensino.
@@ -62,7 +63,14 @@ A entrega da primeira sprint foi desenvolvida utilizando-se as seguintes tecnolo
 - **TypeScript:** superset de JavaScript que permite o uso de tipagem e aplicação de conceitos do paradigma da Programação Orientada a Objetos;
 - **Leaflet:** biblioteca JavaScript usada para construir aplicativos que envolvam mapas;
 - **Netlify:** serviço em nuvem que oferece hospedagem para aplicativos da web e sites estáticos
-
-Para acessar o site do protótipo, acesse: [https://polaris-fatec.netlify.app/](https://polaris-fatec.netlify.app/), já para acessar a documentação em PDF, estilo monografia, desenvolvida nesta sprint (onde a documentação se enquadra como um requisito não funcional do projeto), acesse [este link](./documentacao.pdf)
-
+    
 → [Voltar ao topo](#topo)
+    
+<span id="links">
+    
+## Links úteis
+
+- Site do protótipo: [https://polaris-fatec.netlify.app/](https://polaris-fatec.netlify.app/)
+- Documentação em PDF, estilo monografia (que se enquadra como um requisito não funcional do projeto): [clique aqui](./documentacao.pdf)
+- Repositório do site, onde estão seus códigos: [clique aqui](https://github.com/Equipe-Polaris-DSM-2021/web)
+- Tags geradas em cada repositório que simbolizam o fim da 1ª sprint: [API](https://github.com/Equipe-Polaris-DSM-2021/api/releases/tag/sprint-01), [Portal Web](https://github.com/Equipe-Polaris-DSM-2021/web/releases/tag/sprint-01)
