@@ -4,8 +4,9 @@
 
 <p align="center">
     <a href="#objetivos">Objetivos da sprint</a> &nbsp |&nbsp &nbsp
-    <a href="#entregas">Entregas</a> &nbsp |&nbsp &nbsp 
+    <a href="#entregas">Entregas</a> &nbsp |&nbsp &nbsp
     <a href="#prototipo">Demonstração</a> &nbsp |&nbsp &nbsp 
+    <a href="#metricas">Métricas do time</a> &nbsp |&nbsp &nbsp
     <a href="#links">Links úteis</a>
 </p>
 
@@ -63,6 +64,15 @@ A entrega da primeira sprint foi desenvolvida utilizando-se as seguintes tecnolo
 - **TypeScript:** superset de JavaScript que permite o uso de tipagem e aplicação de conceitos do paradigma da Programação Orientada a Objetos;
 - **Leaflet:** biblioteca JavaScript usada para construir aplicativos que envolvam mapas;
 - **Netlify:** serviço em nuvem que oferece hospedagem para aplicativos da web e sites estáticos
+    
+→ [Voltar ao topo](#topo)
+    
+<span id="metricas">
+    
+## Métricas do time
+Em prol de um melhor aproveitamento das habilidades de cada integrante, o time foi separado em duas frentes: frontend e backend, onde, na primeira sprint, o time de frontend ficou responsável pela confecção do protótipo e o time de backend pelas pesquisas e testes com as tecnologias sugeridas pela empresa para a criação da API e consumo das imagens nos repositórios em nuvem. O acompanhamento de atividades, de responsabilidade da Scrum Master, se encontra na imagem adiante, que contém o gráfico Burndown gerado pela equipe (onde o eixo X são os dias trabalhados na sprint e os valores do eixo Y representam as entregas e esforços realizados com o passar do tempo), incluindo as atividades desenvolvidas e seus responsáveis.
+    
+<p align="center"><img src="./burndown.gif" /></p>
     
 → [Voltar ao topo](#topo)
     
