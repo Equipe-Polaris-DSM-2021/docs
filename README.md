@@ -72,7 +72,7 @@ A entrega da primeira sprint foi desenvolvida utilizando-se as seguintes tecnolo
 ## Métricas do time
 Em prol de um melhor aproveitamento das habilidades de cada integrante, o time foi separado em duas frentes: frontend e backend, onde, na primeira sprint, o time de frontend ficou responsável pela confecção do protótipo e o time de backend pelas pesquisas e testes com as tecnologias sugeridas pela empresa para a criação da API e consumo das imagens nos repositórios em nuvem. O acompanhamento de atividades, de responsabilidade da Scrum Master, se encontra na imagem adiante, que contém o gráfico Burndown gerado pela equipe (onde o eixo X são os dias trabalhados na sprint e os valores do eixo Y representam as entregas e esforços realizados com o passar do tempo), incluindo as atividades desenvolvidas e seus responsáveis.
     
-<p align="center"><img src="./burndown.gif" /></p>
+<p align="center"><img src="./burndown.png" /></p>
     
 → [Voltar ao topo](#topo)
     
