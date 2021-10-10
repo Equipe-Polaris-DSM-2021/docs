@@ -37,7 +37,7 @@ A API foi usada através do Axios e da criação de uma classe “SatSearchContr
 <span id="demo">
 	
 ## 🖥️ Demonstração
-<p align="center"><img src="./demo-sprint-2.gif" /></p>
+<p align="center"><img src="./demo.gif" /></p>
 	
 ### Tecnologias escolhidas
 Para os objetivos desenvolvidos na segunda sprint foram utizadas as seguintes tecnologias:
@@ -54,7 +54,7 @@ Para os objetivos desenvolvidos na segunda sprint foram utizadas as seguintes te
 ## :chart_with_upwards_trend: Métricas do time
 Em prol de um melhor aproveitamento das habilidades de cada integrante, o time foi separado em duas frentes: frontend e backend, onde o time front ficou responsável pela conversão dos componentes funcionais em classes e pesquisas sobre integração front-back e possibilidades de visualização das imagens no mapa, já o time back focou em pesquisas e testes com as tecnologias sugeridas pela empresa para o consumo das imagens nos repositórios em nuvem. O acompanhamento de atividades, de responsabilidade da Scrum Master, se encontra na imagem adiante, que contém o gráfico Burndown gerado pela equipe (onde o eixo X são os dias trabalhados na sprint e os valores do eixo Y representam as entregas e esforços realizados com o passar do tempo), incluindo as atividades desenvolvidas e seus responsáveis.
     
-<p align="center"><img src="./burndown.png" /></p>
+<p align="center"><img src="./burndown-sprint-2.png" /></p>
     
 → [Voltar ao topo](#topo)
     
