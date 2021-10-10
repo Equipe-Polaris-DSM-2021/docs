@@ -35,7 +35,7 @@ Cada entrega foi realizada a partir da criação de uma **tag** em cada reposit�
 <span id="backlogs">
 
 ## :dart: Backlog
-<p align="center"> <img src="./backlog.png" /></p>
+<p align="center"> <img src="./backlog-produto.png" /></p>
 <p align="center"> <img src="./backlog-sprints.png" /></p>
 
 → [Voltar ao topo](#topo)
