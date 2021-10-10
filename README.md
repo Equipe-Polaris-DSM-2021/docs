@@ -1,107 +1,66 @@
-<br id="topo">
+<span id="topo">
 
-<p align="center"> <img src="./banner.png" /></p>
+<h1 align="center">Sprint 2: 20/09/2021 a 10/10/2021</h1>
 
 <p align="center">
-    <a href="#sobre">Sobre</a>  |  
-    <a href="#backlogs">Backlogs</a>  |  
-    <a href="#user-stories">User Stories</a>  |  
-    <a href="#prototipo">Protótipo</a>  |  
-    <a href="#tecnologias">Tecnologias</a>  |  
-    <a href="#equipe">Equipe</a>  |  
-    <a href="#final">Apresentação Final</a>  |  
-    <a href="#licenca">Licença</a>
+    <a href="#objetivos">Objetivos da sprint</a> &nbsp |&nbsp &nbsp
+    <a href="#entregas">Entregas</a> &nbsp |&nbsp &nbsp
+    <a href="#demo">Demonstração</a> &nbsp |&nbsp &nbsp 
+    <a href="#metricas">Métricas do time</a> &nbsp |&nbsp &nbsp
+    <a href="#links">Links úteis</a>
 </p>
-   
-<span id="sobre">
 
-## :bookmark_tabs: Sobre o projeto
-A partir da apresentação do desafio pela empresa parceira, a solução desenvolvida se configura em um site para consumo de imagens de satélites em repositórios em nuvem, permitindo a manipulação, visualização e download dessas imagens, proporcionando sua análise e facilitando sua obtenção de forma fácil e rápida.
-> _Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos envolvidos_
+Nesta segunda sprint a equipe se atentou ao desejo do cliente pelo backend do site, responsável pelas consultas e processamento das imagens. Com o protótipo pronto e validado na última sprint, as tarefas se separaram entre refinar o frontend e massivamente aplicar esforços em pesquisas e testes de bibliotecas e tecnologias que atendessem aos requisitos, seguindo o backlog planejado para as sprints, visando entregar um projeto que permita a consulta aos repositórios a partir dos filtros aplicados, como cobertura de nuvens, área de interesse, período de tempo e satélite desejado.
 
-:pushpin: Status do Projeto: **Em andamento** :construction:
+<span id="objetivos">
+    
+## :dart: Objetivos da Sprint
+Os requisitos (tanto do cliente como da instituição de ensino) abrangidos por essa sprint são:
+- RF 01: Consulta às imagens definindo um ou mais satélites, área de interesse, período e cobertura de nuvens máxima;
+- Requisito FATEC: aplicação do paradigma de programação orientada à objetos.
 
-### Entregas de Sprints
-Cada entrega foi realizada a partir da criação de uma **tag** em cada repositório (API e web), além da criação de uma branch neste repositório com um relatório completo de tudo o que foi desenvolvido. Observe a relação a seguir:
-| Sprint | Previsão   | Status       | Histórico                                         |
-|:------:|:----------:|:-------------|:-------------------------------------------------:|
-| 01     | 19/09/2021 | :heavy_check_mark: Concluída    | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-01) |
-| 02     | 10/10/2021 | :heavy_check_mark: Concluída    | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-02) |
-| 03     | 07/11/2021 | :white_check_mark: Em andamento | --                                                |
-| 04     | 28/11/2021 | Não iniciada                    | --                                                | 
+<span id="entregas">
+        
+## :heavy_check_mark: Entregas
+    
+### RF 01: Consulta às imagens definindo um ou mais satélites, área de interesse, período e cobertura de nuvens máxima
+Tida como a funcionalidade principal do projeto, a consulta às imagens nos repositórios se deu com muita pesquisa e testes, desde conversas com o cliente, professores e profissionais de áreas semelhantes, até a criação de crawlers e uso de APIs de terceiros. O requisito se configura como a aplicação de consultas utilizando os filtros selecionados pelo portal web, sendo eles os satélites desejados, área de interesse, período e cobertura máxima de nuvens, sendo implementado utilizando Node.js e uma API externa chamada SAT-API, da Development Seed, que facilita o consumo das imagens dos satélites Landsat 8 e Sentinel 2 (confira a documentação completa [clicando aqui](./documentacao.pdf))
+	
+#### Envio dos filtros desejados
+Na interface do site, há uma área destinada a capturar os filtros desejados para a busca das imagens e mandar tais dados para o backend, onde esta ação é de responsabilidade do "context", que envia os dados e recebe a resposta, manipulando a interface para mostrar uma lista das imagens que correspondiam às escolhas aplicadas, dando a possibilidade de visualização no mapa ou de download (funcionalidade que será desenvolvida na próxima sprint).
+	
+#### Reaalização da busca e resposta ao site (integração)
+A API foi usada através do Axios e da criação de uma classe “SatSearchController”, que contém o método "index()" que recebe dois parâmetros: req, do tipo Request, e res, do tipo Response, onde em seu corpo há um bloco de “try catch” para obtenção das imagens ou o tratamento de alguma exceção ou erro. No bloco “try” há o recebimento dos filtros via corpo da requisição do frontend e um vetor para armazenamento das imagens que seriam obtidas como resposta, sendo aplicado um laço de repetição para cada satélite escolhido entre as opções possíveis, criando duas variáveis: “inputBody”  (estrutura as informações para a busca na API externa) e “headers” (cabeçalho da requisição à API). Com isso é criada a constante “satCollection” que espera o resultado do método “POST” aplicado na API, passando como argumentos o caminho da busca e as variáveis "inputBody" e "headers”, armazenando e enviando como resposta ao frontend o vetor “imagesResponse” como JSON. Já na situação onde a operação não for bem sucedida, o bloco de “catch” captura o erro e o exibe no console.
+	
+→ [Voltar ao topo](#topo)
+	
+<span id="demo">
+	
+## 🖥️ Demonstração
+<p align="center"><img src="./demo.gif" /></p>
+	
+### Tecnologias escolhidas
+Para os objetivos desenvolvidos na segunda sprint foram utizadas as seguintes tecnologias:
+
+- **React.js:** usada para a criação de interfaces gráficas com a sintaxe JSX;
+- **TypeScript:** usada para aplicação de conceitos do paradigma da Programação Orientada a Objetos;
+- **Leaflet:** usada para construir a interface do mapa;
+- **STAC-API:** permite consultar imagens dos satélites Landsat 8 e Sentinel 2 (API disponibilizada pela Development Seed).
+
+→ [Voltar ao topo](#topo)
+
+<span id="metricas">
+    
+## :chart_with_upwards_trend: Métricas do time
+Em prol de um melhor aproveitamento das habilidades de cada integrante, o time foi separado em duas frentes: frontend e backend, onde o time front ficou responsável pela conversão dos conponentes funcionais em classes e pesquisas sobre integração front-back e possibilidades de visualização das imagens no mapa, já o time back focou em pesquisas e testes com as tecnologias sugeridas pela empresa para o consumo das imagens nos repositórios em nuvem. O acompanhamento de atividades, de responsabilidade da Scrum Master, se encontra na imagem adiante, que contém o gráfico Burndown gerado pela equipe (onde o eixo X são os dias trabalhados na sprint e os valores do eixo Y representam as entregas e esforços realizados com o passar do tempo), incluindo as atividades desenvolvidas e seus responsáveis.
+    
+<p align="center"><img src="./burndown.png" /></p>
     
 → [Voltar ao topo](#topo)
-
-<span id="backlogs">
-
-## :dart: Backlog
-<p align="center"> <img src="./backlog-produto.png" /></p>
-<p align="center"> <img src="./backlog-sprints.png" /></p>
-
-→ [Voltar ao topo](#topo)
-
-<span id="user-stories">
-
-## :mag: User Stories
-<p align="center"> <img src="./user-stories.png" /></p>
-
-→ [Voltar ao topo](#topo)
-
-<span id="prototipo">
-
-## :desktop_computer: Protótipo
-Como parte do planejamento do projeto foram criados wireframes e mockups para idealização do layout, que, ao ser validado pelo cliente, foi aplicado em um protótipo construído em React, possibilitando a interação do usuário com a interface, porém sem a utilização das funcionalidades reais. O resultado pode ser conferido pela demonstração abaixo:
     
-<p align="center"> <img src="./demo.gif" /></p>
-
-→ [Voltar ao topo](#topo)
-
-<span id="tecnologias">
-
-## 🛠️ Tecnologias
-As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na construção do projeto:
-
-<img src="https://img.shields.io/badge/Figma-20232A?style=for-the-badge&logo=figma&logoColor=DC143C" alt="Figma" /> 
-<img src="https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=007ACC" alt="Typescript" />
-<img src="https://img.shields.io/badge/HTML5-20232A?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML" /> 
-<img src="https://img.shields.io/badge/CSS3-20232A?style=for-the-badge&logo=css3&logoColor=1572B6" alt="CSS" /> 	
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> 
-<img src="https://img.shields.io/badge/Leaflet-20232A?style=for-the-badge&logo=Leaflet&logoColor=199900" alt="Leaflet" /> 
-<img src="https://img.shields.io/badge/Node.js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=339933" alt="Node" />  <br>
-<img src="https://img.shields.io/badge/MongoDB-20232A?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MongoDB" />
-<img src="https://img.shields.io/badge/VS_Code-20232A?style=for-the-badge&logo=visual%20studio%20code&logoColor=0078D4" alt="VS Code" /> 
-<img src="https://img.shields.io/badge/Discord-20232A?style=for-the-badge&logo=discord&logoColor=7289DA" alt="Discord" /> 
-<img src="https://img.shields.io/badge/GitHub-20232A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /> 
-<img src="https://img.shields.io/badge/Google%20Sheets-20232A?style=for-the-badge&logo=google-sheets&logoColor=34A853" alt="Google Sheets" /> 
-     
-→ [Voltar ao topo](#topo)
-
-<span id="equipe">
-
-## :busts_in_silhouette: Equipe
-|    Função     | Nome                                  |  LinkedIn  &  GitHub                                                     |
-| :-----------: | :------------------------------------ | :----------------------------------------------------------------------: |
-| Product Owner | Monique Carniello                     | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/monique-carniello-511ba61b6)         [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Monique-c)         |
-| Scrum Master  | Maria Gabriela Garcia dos Santos Reis | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mariagabrielareis/)                  [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/MariaGabrielaReis) |
-| Dev Team      | Caio Vitor Dias                       | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/caio-vitor-c1/)                      [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/CaioVitorDias1)    |
-| Dev Team      | Gabriel Camargo Leite                 | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-camargo-915452196/)          [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/GabrielCamargoL)   |
-| Dev Team      | Giovana Thaís de Oliveira Silva       | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gioliveirass)                        [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gioliveirass)      |
-| Dev Team      | João Marcos Oliveira Santos           | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/joaomarcosoliveiraa)                 [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JoaoM-py)          |
-| Dev Team      | Otávio Ferraroni Gonçalves Pane       | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/otavioferraronigpane/)               [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/OtavioPane)        |
-| Dev Team      | Thiago Henrique Ferreira              | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-henrique-ferreira-2499a41a8/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ThHenrique)        |
-
-→ [Voltar ao topo](#topo)
-
-<span id="final">
-
-## :clapper: Apresentação Final do Projeto
-
-Em breve...
-
-<span id="licenca">
-
-## :page_with_curl: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-→ [Voltar ao topo](#topo)
+<span id="links">
+    
+## :link: Links úteis
+- Documentação em PDF, estilo monografia (requisito não funcional do projeto): [clique aqui](./documentacao.pdf)
+- Repositórios de códigos: [Portal Web](https://github.com/Equipe-Polaris-DSM-2021/web), [API](https://github.com/Equipe-Polaris-DSM-2021/api)
+- Tags geradas em cada repositório que simbolizam o fim da 2ª sprint: [API](https://github.com/Equipe-Polaris-DSM-2021/api/releases/tag/sprint-02), [Portal Web](https://github.com/Equipe-Polaris-DSM-2021/web/releases/tag/sprint-02)
