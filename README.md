@@ -37,7 +37,7 @@ A API foi usada através do Axios e da criação de uma classe “SatSearchContr
 <span id="demo">
 	
 ## 🖥️ Demonstração
-<p align="center"><img src="./demo.gif" /></p>
+<p align="center"><img src="./demo-sprint-2.gif" /></p>
 	
 ### Tecnologias escolhidas
 Para os objetivos desenvolvidos na segunda sprint foram utizadas as seguintes tecnologias:
