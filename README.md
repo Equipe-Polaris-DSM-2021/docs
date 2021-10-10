@@ -26,9 +26,9 @@ Cada entrega foi realizada a partir da criação de uma **tag** em cada reposit�
 | Sprint | Previsão   | Status       | Histórico                                         |
 |:------:|:----------:|:-------------|:-------------------------------------------------:|
 | 01     | 19/09/2021 | :heavy_check_mark: Concluída    | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-01) |
-| 02     | 10/10/2021 | :white_check_mark: Em andamento | --                                                |
-| 03     | 07/11/2021 | Não iniciada                | --                                                |
-| 04     | 28/11/2021 | Não iniciada                | --                                                | 
+| 02     | 10/10/2021 | :heavy_check_mark: Concluída    | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-02) |
+| 03     | 07/11/2021 | :white_check_mark: Em andamento | --                                                |
+| 04     | 28/11/2021 | Não iniciada                    | --                                                | 
     
 → [Voltar ao topo](#topo)
 
@@ -63,11 +63,12 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 
 <img src="https://img.shields.io/badge/Figma-20232A?style=for-the-badge&logo=figma&logoColor=DC143C" alt="Figma" /> 
 <img src="https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=007ACC" alt="Typescript" />
+<img src="https://img.shields.io/badge/HTML5-20232A?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML" /> 
+<img src="https://img.shields.io/badge/CSS3-20232A?style=for-the-badge&logo=css3&logoColor=1572B6" alt="CSS" /> 	
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> 
 <img src="https://img.shields.io/badge/Leaflet-20232A?style=for-the-badge&logo=Leaflet&logoColor=199900" alt="Leaflet" /> 
-<img src="https://img.shields.io/badge/Node.js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=339933" alt="Node" /> 
-<img src="https://img.shields.io/badge/Jest-20232A?style=for-the-badge&logo=jest&logoColor=C21325" alt="Jest" />  <br>
-<img src="https://img.shields.io/badge/PostgreSQL-20232A?style=for-the-badge&logo=postgresql&logoColor=316192" alt="Postgres" /> 
+<img src="https://img.shields.io/badge/Node.js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=339933" alt="Node" />  <br>
+<img src="https://img.shields.io/badge/MongoDB-20232A?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MongoDB" />
 <img src="https://img.shields.io/badge/VS_Code-20232A?style=for-the-badge&logo=visual%20studio%20code&logoColor=0078D4" alt="VS Code" /> 
 <img src="https://img.shields.io/badge/Discord-20232A?style=for-the-badge&logo=discord&logoColor=7289DA" alt="Discord" /> 
 <img src="https://img.shields.io/badge/GitHub-20232A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /> 
