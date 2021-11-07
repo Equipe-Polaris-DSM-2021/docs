@@ -30,8 +30,8 @@ Cada entrega foi realizada a partir da criação de uma **tag** em cada reposit�
 |:------:|:----------:|:-------------|:-------------------------------------------------:|
 | 01 | 19/09/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-01) |
 | 02 | 10/10/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-02) |
-| 03 | 07/11/2021 | :white_check_mark: Em andamento | -- |
-| 04 | 28/11/2021 | Não iniciada | -- |
+| 03 | 07/11/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-03) |
+| 04 | 28/11/2021 | :white_check_mark: Em andamento | -- |
 
 → [Voltar ao topo](#topo)
 
