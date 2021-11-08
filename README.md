@@ -34,12 +34,12 @@ Foram pesquisadas muitas tecnologias, ferramentas e bibliotecas para aplicação
 	
 <p align="center">
   Imagem sem filtro (banda azul original)
-  <img src="./poc-imagem-sem-filtro.jpg" />
+  <img src="./poc-sem-filtro.jpg" />
 </p>
 
 <p align="center">
   Imagem com filtro (filtro: equalize_histogram)
-  <img src="./poc-imagem-com-filtro.png" />
+  <img src="./poc-com-filtro.png" />
 </p>	
 	
 ### RF 06: Ferramenta de download de imagens
