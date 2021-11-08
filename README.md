@@ -33,7 +33,7 @@ Um dos requisitos mais valiosos para o cliente, que consiste em usar tiles dinâ
 Foram pesquisadas muitas tecnologias, ferramentas e bibliotecas para aplicação de filtros nas imagens, porém, também com muita dificuldade, o time back-end conseguiu a aplicação de filtros específicos em uma única imagem, mas ainda com alguns poréns, como a necessidade de uma máquina potente o suficiente para todo o processamento e o uso da linguagem Python, utilizando o Jupyter Notebook, sem muita clareza no caminho a se seguir para integração com o projeto como um todo para possibilitar a aplicação em todas as imagens disponíveis. Veja na demonstração abaixo o resultado da aplicação de um filtro em uma imagem obtida do satélite Landsat 8.
 	
 <table align="center">
-	<th> Imagem sem filtro (banda azul original) </th> 
+	<th> Imagem sem filtro </th> 
 	<th> Imagem com filtro (filtro: equalize_histogram) </th> 
 	<tr align="center">
 		<td><img src="./poc-sem-filtro.jpg" width="300px"/></td>
