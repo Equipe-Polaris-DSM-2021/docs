@@ -32,15 +32,14 @@ Um dos requisitos mais valiosos para o cliente, que consiste em usar tiles dinâ
 ### RF 03: Exibição das imagens em cores naturais e realçadas
 Foram pesquisadas muitas tecnologias, ferramentas e bibliotecas para aplicação de filtros nas imagens, porém, também com muita dificuldade, o time back-end conseguiu a aplicação de filtros específicos em uma única imagem, mas ainda com alguns poréns, como a necessidade de uma máquina potente o suficiente para todo o processamento e o uso da linguagem Python, utilizando o Jupyter Notebook, sem muita clareza no caminho a se seguir para integração com o projeto como um todo para possibilitar a aplicação em todas as imagens disponíveis. Veja na demonstração abaixo o resultado da aplicação de um filtro em uma imagem obtida do satélite Landsat 8.
 	
-<p align="center">
-  Imagem sem filtro (banda azul original)
-  <img src="./poc-sem-filtro.jpg" />
-</p>
-
-<p align="center">
-  Imagem com filtro (filtro: equalize_histogram)
-  <img src="./poc-com-filtro.png" />
-</p>	
+<table align="center">
+	<th> Imagem sem filtro (banda azul original) </th> 
+	<th> Imagem com filtro (filtro: equalize_histogram) </th> 
+	<tr align="center">
+		<td><img src="./poc-sem-filtro.jpg" width="300px"/></td>
+		<td><img src="./poc-com-filtro.png" width="300px"/> </td>
+	</tr>
+</table>
 	
 ### RF 06: Ferramenta de download de imagens
 Como o acordado com o cliente, este requisito foi dividido entre a sprint 3 e 4, onde neste sprint seria iniciado a parte visual do requisito, como construção do modal e validação do mesmo pela empresa parceira, bem como testes e pesquisas para possibilitar o download das imagens futuramente. No GIF a seguir é possível observar a criação do modal inicial já integrado ao projeto, possibilitando o download de uma banda (arquivo .tiff) de cada imagem, mas que na próoxima sprint ainda será refinado e usado para os fins requeridos.
