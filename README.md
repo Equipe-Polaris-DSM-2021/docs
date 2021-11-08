@@ -53,7 +53,7 @@ Como o acordado com o cliente, este requisito foi dividido entre a sprint 3 e 4,
 ## :chart_with_upwards_trend: Métricas do time
 Em prol de um melhor aproveitamento das habilidades de cada integrante, a divisão do time entre as frentes de frontend e backend permaneceu, onde o time front ficou responsável pela criação do modal de download e pesquisas relacionadas a este requisito enquanto o time back focou em pesquisas e testes com os requisitos de tiles dinâmicos e aplicação de filtros nas imagens. O acompanhamento de atividades, de responsabilidade da Scrum Master, se encontra na imagem adiante, que contém o gráfico Burndown gerado pela equipe (onde o eixo X são os dias trabalhados na sprint e os valores do eixo Y representam as entregas e esforços realizados com o passar do tempo), incluindo as atividades desenvolvidas e seus responsáveis.
     
-<p align="center"><img src="./burndown.png" /></p>
+<p align="center"><img src="./burndown-github.png" /></p>
     
 → [Voltar ao topo](#topo)
     
