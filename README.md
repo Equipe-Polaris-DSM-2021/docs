@@ -1,115 +1,66 @@
-<br id="topo">
+<span id="topo">
 
-<p align="center"> <img src="./banner.png" /></p>
+<h1 align="center">Sprint 3: 18/10/2021 a 07/11/2021</h1>
 
 <p align="center">
-    <a href="#sobre">Sobre</a>  |  
-    <a href="#backlogs">Backlogs</a>  |  
-    <a href="#user-stories">User Stories</a>  |  
-    <a href="#prototipo">Protótipo</a>  |  
-    <a href="#tecnologias">Tecnologias</a>  |  
-    <a href="#equipe">Equipe</a>  |  
-    <a href="#final">Apresentação Final</a>  |  
-    <a href="#licenca">Licença</a>
+    <a href="#objetivos">Objetivos da sprint</a> &nbsp |&nbsp &nbsp
+    <a href="#entregas">Entregas</a> &nbsp |&nbsp &nbsp
+    <a href="#metricas">Métricas do time</a> &nbsp |&nbsp &nbsp
+    <a href="#links">Links úteis</a>
 </p>
-   
-<span id="sobre">
 
-## :bookmark_tabs: Sobre o projeto
+Na terceira sprint a equipe focou nos requisitos mais valiosos para o cliente, como geração de tiles dinâmicos e a exibição das imagens em cores naturais e realçadas, além de trabalhar no iníco do requisito de download das imagens. Com a apresentação do pitch da 2ª sprint, também foram apontadas melhorias a serem feitas, como o uso da própria imagem na visualização do mapa e permanecer com a delimitação da área de interesse durante toda a visualização das imagens, onde este último pedido foi concluído com sucesso nesta sprint, enquanto que o primeiro pedido está avaliado para a quarta sprint.
 
-A partir da apresentação do desafio pela empresa parceira, a solução desenvolvida se configura em um site para consumo de imagens de satélites em repositórios em nuvem, permitindo a manipulação, visualização e download dessas imagens, proporcionando sua análise e facilitando sua obtenção de forma fácil e rápida.
+<span id="objetivos">
+    
+## :dart: Objetivos da Sprint
+Os requisitos abrangidos por essa sprint são:
+- RF 02: Serviço de geração de tiles dinâmicos
+- RF 03: Exibição das imagens em cores naturais e realçadas
+- RF 06: Ferramenta de download de imagens
 
-> _Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos envolvidos_
+<span id="entregas">
+        
+## :heavy_check_mark: Entregas
+Durante toda a terceira sprint foram observadas dificuldades do time quanto a questões de conhecimento e tempo para execução do projeto, o que provocou um replanejamento do backlog junto ao cliente e a busca por profissionais da área, ou áreas relacionadas, fora da faculdade, porém, nenhum resultado palpável que poderia ser aplicado ao projeto foi obtido com essa estratégia, caracterizando este sprint como majoritariamente de pesquisas, busca de conhecimento e testes.
+    
+### RF 02: Serviço de geração de tiles dinâmicos
+Um dos requisitos mais valiosos para o cliente, que consiste em usar tiles dinâmicos durante a visualização das imagens no mapa. Tal funcionalidade era considerada muito avançada pelos integrantes do grupo, que tiveram muita dificuldade em aplicar esforços em pesquisas, conversas com professores e outros profissionais além de implementar pequenas provas de conceito para afirmar o conhecimento que estavam adquirindo a passos lentos, até que, enfim, algum mínimo resultado foi alcançado com a geração de um tile caracterizado como "estático" por um professor atuante na área, e então o foco dos últimos dias de sprint foi centrado em tentar obter mais resultados desta tática, afim de entender melhor o conceito de tiles, diferenças entre tile estático e dinâmico e como poderia ser integrado ao projeto para que satisfizesse o requisito do cliente. Observe um resultado obtido de um dos testes realizados:
+	
+<p align="center"><img src="./poc-tile-estatico.gif" /></p>
+	
+### RF 03: Exibição das imagens em cores naturais e realçadas
+Foram pesquisadas muitas tecnologias, ferramentas e bibliotecas para aplicação de filtros nas imagens, porém, também com muita dificuldade, o time back-end conseguiu a aplicação de filtros específicos em uma única imagem, mas ainda com alguns poréns, como a necessidade de uma máquina potente o suficiente para todo o processamento e o uso da linguagem Python, utilizando o Jupyter Notebook, sem muita clareza no caminho a se seguir para integração com o projeto como um todo para possibilitar a aplicação em todas as imagens disponíveis. Veja na demonstração abaixo o resultado da aplicação de um filtro em uma imagem obtida do satélite Landsat 8.
+	
+<p align="center">
+  Imagem sem filtro (banda azul original)
+  <img src="./poc-imagem-sem-filtro.jpg" />
+</p>
 
-:pushpin: Status do Projeto: **Em andamento** :construction:
-
-### Entregas de Sprints
-
-Cada entrega foi realizada a partir da criação de uma **tag** em cada repositório (API e web), além da criação de uma branch neste repositório com um relatório completo de tudo o que foi desenvolvido. Observe a relação a seguir:
-| Sprint | Previsão | Status | Histórico |
-|:------:|:----------:|:-------------|:-------------------------------------------------:|
-| 01 | 19/09/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-01) |
-| 02 | 10/10/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-02) |
-| 03 | 07/11/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-03) |
-| 04 | 28/11/2021 | :white_check_mark: Em andamento | -- |
-
+<p align="center">
+  Imagem com filtro (filtro: equalize_histogram)
+  <img src="./poc-imagem-com-filtro.png" />
+</p>	
+	
+### RF 06: Ferramenta de download de imagens
+Como o acordado com o cliente, este requisito foi dividido entre a sprint 3 e 4, onde neste sprint seria iniciado a parte visual do requisito, como construção do modal e validação do mesmo pela empresa parceira, bem como testes e pesquisas para possibilitar o download das imagens futuramente. No GIF a seguir é possível observar a criação do modal inicial já integrado ao projeto, possibilitando o download de uma banda (arquivo .tiff) de cada imagem, mas que na próoxima sprint ainda será refinado e usado para os fins requeridos.
+	
+<p align="center"><img src="./modal-download.gif" /></p>	
+	
 → [Voltar ao topo](#topo)
-
-<span id="backlogs">
-
-## :dart: Backlog
-
-<p align="center"> <img src="./product-backlog.png" /></p>
-<p align="center"> <img src="./sprint-backlog.png" /></p>
-
+    
+<span id="metricas">
+    
+## :chart_with_upwards_trend: Métricas do time
+Em prol de um melhor aproveitamento das habilidades de cada integrante, a divisão do time entre as frentes de frontend e backend permaneceu, onde o time front ficou responsável pela criação do modal de download e pesquisas relacionadas a este requisito enquanto o time back focou em pesquisas e testes com os requisitos de tiles dinâmicos e aplicação de filtros nas imagens. O acompanhamento de atividades, de responsabilidade da Scrum Master, se encontra na imagem adiante, que contém o gráfico Burndown gerado pela equipe (onde o eixo X são os dias trabalhados na sprint e os valores do eixo Y representam as entregas e esforços realizados com o passar do tempo), incluindo as atividades desenvolvidas e seus responsáveis.
+    
+<p align="center"><img src="./burndown.png" /></p>
+    
 → [Voltar ao topo](#topo)
-
-<span id="user-stories">
-
-## :mag: User Stories
-
-<p align="center"> <img src="./us.png" /></p>
-
-→ [Voltar ao topo](#topo)
-
-<span id="prototipo">
-
-## :desktop_computer: Protótipo
-
-Como parte do planejamento do projeto foram criados wireframes e mockups para idealização do layout, que, ao ser validado pelo cliente, foi aplicado em um protótipo construído em React, possibilitando a interação do usuário com a interface, porém sem a utilização das funcionalidades reais. O resultado pode ser conferido pela demonstração abaixo:
-
-<p align="center"> <img src="./demo.gif" /></p>
-
-→ [Voltar ao topo](#topo)
-
-<span id="tecnologias">
-
-## 🛠️ Tecnologias
-
-As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na construção do projeto:
-
-<img src="https://img.shields.io/badge/Figma-20232A?style=for-the-badge&logo=figma&logoColor=DC143C" alt="Figma" /> 
-<img src="https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=007ACC" alt="Typescript" />
-<img src="https://img.shields.io/badge/HTML5-20232A?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML" /> 
-<img src="https://img.shields.io/badge/CSS3-20232A?style=for-the-badge&logo=css3&logoColor=1572B6" alt="CSS" /> 	
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> 
-<img src="https://img.shields.io/badge/Leaflet-20232A?style=for-the-badge&logo=Leaflet&logoColor=199900" alt="Leaflet" /> 
-<img src="https://img.shields.io/badge/Node.js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=339933" alt="Node" />  <br>
-<img src="https://img.shields.io/badge/MongoDB-20232A?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MongoDB" />
-<img src="https://img.shields.io/badge/VS_Code-20232A?style=for-the-badge&logo=visual%20studio%20code&logoColor=0078D4" alt="VS Code" /> 
-<img src="https://img.shields.io/badge/Discord-20232A?style=for-the-badge&logo=discord&logoColor=7289DA" alt="Discord" /> 
-<img src="https://img.shields.io/badge/GitHub-20232A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /> 
-<img src="https://img.shields.io/badge/Google%20Sheets-20232A?style=for-the-badge&logo=google-sheets&logoColor=34A853" alt="Google Sheets" /> 
-     
-→ [Voltar ao topo](#topo)
-
-<span id="equipe">
-
-## :busts_in_silhouette: Equipe
-
-|    Função     | Nome                                  |                                                                                                                                                      LinkedIn & GitHub                                                                                                                                                      |
-| :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Product Owner | Monique Carniello                     |     [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/monique-carniello-511ba61b6) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Monique-c)      |
-| Scrum Master  | Maria Gabriela Garcia dos Santos Reis |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mariagabrielareis/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/MariaGabrielaReis)      |
-|   Dev Team    | Caio Vitor Dias                       |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/caio-vitor-c1/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/CaioVitorDias1)          |
-|   Dev Team    | Gabriel Camargo Leite                 |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-camargo-915452196/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/GabrielCamargoL)   |
-|   Dev Team    | Giovana Thaís de Oliveira Silva       |           [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gioliveirass) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gioliveirass)            |
-|   Dev Team    | João Marcos Oliveira Santos           |          [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/joaomarcosoliveiraa) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JoaoM-py)          |
-|   Dev Team    | Otávio Ferraroni Gonçalves Pane       |        [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/otavioferraronigpane/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/OtavioPane)        |
-|   Dev Team    | Thiago Henrique Ferreira              | [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-henrique-ferreira-2499a41a8/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ThHenrique) |
-
-→ [Voltar ao topo](#topo)
-
-<span id="final">
-
-## :clapper: Apresentação Final do Projeto
-
-Em breve...
-
-<span id="licenca">
-
-## :page_with_curl: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-→ [Voltar ao topo](#topo)
+    
+<span id="links">
+    
+## :link: Links úteis
+- Documentação em PDF, estilo monografia (requisito não funcional do projeto): [clique aqui](./documentacao.pdf)
+- Repositórios de códigos: [Portal Web](https://github.com/Equipe-Polaris-DSM-2021/web), [API](https://github.com/Equipe-Polaris-DSM-2021/api)
+- Tags geradas em cada repositório que simbolizam o fim da 2ª sprint: [API](https://github.com/Equipe-Polaris-DSM-2021/api/releases/tag/sprint-03), [Portal Web](https://github.com/Equipe-Polaris-DSM-2021/web/releases/tag/sprint-03)
