@@ -9,7 +9,7 @@
     <a href="#links">Links úteis</a>
 </p>
 
-Na quarta e última sprint a equipe deu atenção aos requisitos restantes do projeto, que foram renegociados junto ao cliente por conta de sua complexidade, além de focar também na entrega de requisitos desejados pela própria instituição de ensino, como a implementação e uso de banco de dados, onde, no geral, foram abordadas tarefas de front-end (para implementação do banco de dados a partir de um cadastro de usuários e o download das imagens), e tarefas de back-end, concentradas em pesquisas e testes com geração de tiles dinâmicos e estáticos, aplicação de filtros de cor em imagens e o download das bandas de cada imagem separadamente.
+Na quarta e última sprint a equipe deu atenção aos requisitos restantes do projeto, que foram renegociados junto ao cliente por conta de sua complexidade, além de focar também na entrega de requisitos desejados pela própria instituição de ensino, como a implementação e uso de banco de dados onde, em geral, foram abordadas tarefas de front-end (para implementação do banco de dados a partir de um cadastro de usuários e o download das imagens), e tarefas de back-end, concentradas em pesquisas e testes com geração de tiles dinâmicos e estáticos, aplicação de filtros de cor em imagens e o download das bandas de cada imagem separadamente.
 
 <span id="objetivos">
 
@@ -34,11 +34,11 @@ Com a apresentação ao fim da sprint 3, foi confirmado que a utilização de ti
 
 ### RF 03: Exibição das imagens em cores naturais e realçadas
 
-Após a criação de muitos testes e pesquisas, foi alcançado o resultado esperado, porém aplicado a uma única imagem, capturada pelo satélite Landsat 8, e utilizando filtros específicos, ainda com limitações de processamento e tempo, portanto, da forma que realizada tal tarefa, a demora para a geração de uma visualização do filtro na imagem utilizando o Jupyter Notebook fez com que sua intgração ao projeto como um todo se tornasse não recomendável, onde a finalização da última sprint não trouxe melhores práticas, outras estratégias ou mesmo uma forma de integração viável, ocasionando uma entrega incompleta deste requisito.
+Após a criação de muitos testes e pesquisas, foi alcançado o resultado esperado, porém aplicado a uma única imagem, capturada pelo satélite Landsat 8, e utilizando filtros específicos, ainda com limitações de processamento e tempo, portanto, da forma que realizada tal tarefa, a demora para a geração de uma visualização do filtro na imagem utilizando o Jupyter Notebook fez com que sua integração ao projeto como um todo se tornasse não recomendável, onde a finalização da última sprint não trouxe melhores práticas, outras estratégias ou mesmo uma forma de integração viável, ocasionando uma entrega incompleta deste requisito.
 
 ### RF 06: Ferramenta de download de imagens
 
-Também na apresentação da terceira sprint foi acordado com o cliente que o download das imagens se daria pela opção de baixar as bandas de cada imagem sparadamente, onde este requisito foi iniciado na sprint 3, com a criação da interface, e finalizado na sprint 4, com a implementação da lógica que permite o download das bandas disponíveis. Na demonstração abaixo é possível observar o modal criado na sprint passada juntamente com o funcionamento do requisito.
+Também na apresentação da terceira sprint foi acordado com o cliente que o download das imagens se daria pela opção de baixar as bandas de cada imagem separadamente, onde este requisito foi iniciado na sprint 3, com a criação da interface, e finalizado na sprint 4, com a implementação da lógica que permite o download das bandas disponíveis. Na demonstração abaixo é possível observar o modal criado na sprint passada juntamente com o funcionamento do requisito.
 
 <p align="center"><img src="./download.gif" /></p>
 
@@ -58,7 +58,7 @@ Como sendo a última sprint, foram previstos as entregas finais de alguns requis
 | Uso da linguagem de programação TypeScript orientada à objetos                                               | Aplicada tanto ao back-end quanto ao front-end através de classes e objetos                                                                                                                  |
 | Servidor em Node.js e uso de frameworks duas camadas, como React                                             | Utilizado Node.js como servidor e React no front-end                                                                                                                                         |
 | Uso de serviço em nuvem para geração de tiles dinâmicos de imagens                                           | Pendente                                                                                                                                                                                     |
-| Uso de serviço em nuvem para consulta aos catálogos de imagens disponíveis em repositórios públicos em nuvem | Utilização da API externa para manipulaão das imagens capturadas pelo satélite Landsat 8 e Sentinel 2                                                                                        |
+| Uso de serviço em nuvem para consulta aos catálogos de imagens disponíveis em repositórios públicos em nuvem | Utilização da API externa para manipulação das imagens capturadas pelo satélite Landsat 8 e Sentinel 2                                                                                        |
 | Uso de tecnologias como PostgreeSQL, Leaflet, AWS Lambda, Python e Node.js                                   | Utilizadas na criação do banco de dados (PostgreeSQL), interface de mapa (Leaflet), em testes e aplicação de filtros nas imagens (Python) além do back-end do site, com TypeScript (Node.js) |
 
 → [Voltar ao topo](#topo)
