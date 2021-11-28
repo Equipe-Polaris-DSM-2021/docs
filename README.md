@@ -9,8 +9,7 @@
     <a href="#prototipo">Protótipo</a>  |  
     <a href="#tecnologias">Tecnologias</a>  |  
     <a href="#equipe">Equipe</a>  |  
-    <a href="#final">Apresentação Final</a>  |  
-    <a href="#licenca">Licença</a>
+    <a href="#final">Apresentação Final</a>
 </p>
    
 <span id="sobre">
@@ -21,7 +20,7 @@ A partir da apresentação do desafio pela empresa parceira, a solução desenvo
 
 > _Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos envolvidos_
 
-:pushpin: Status do Projeto: **Em andamento** :construction:
+:pushpin: Status do Projeto: **Concluído** :heavy_check_mark:
 
 ### Entregas de Sprints
 
@@ -31,7 +30,7 @@ Cada entrega foi realizada a partir da criação de uma **tag** em cada reposit�
 | 01 | 19/09/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-01) |
 | 02 | 10/10/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-02) |
 | 03 | 07/11/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-03) |
-| 04 | 28/11/2021 | :white_check_mark: Em andamento | -- |
+| 04 | 28/11/2021 | :heavy_check_mark: Concluída | [ver relatório](https://github.com/Equipe-Polaris-DSM-2021/docs/tree/sprint-04) |
 
 → [Voltar ao topo](#topo)
 
@@ -75,12 +74,15 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> 
 <img src="https://img.shields.io/badge/Leaflet-20232A?style=for-the-badge&logo=Leaflet&logoColor=199900" alt="Leaflet" /> 
 <img src="https://img.shields.io/badge/Node.js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=339933" alt="Node" />  <br>
+<img src="https://img.shields.io/badge/Python-20232A?style=for-the-badge&logo=python&logoColor=darkgreen" alt="Python" />
 <img src="https://img.shields.io/badge/MongoDB-20232A?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MongoDB" />
+<img src="https://img.shields.io/badge/PostgreSQL-20232A?style=for-the-badge&logo=postgresql&logoColor=white" alt="MongoDB" />
 <img src="https://img.shields.io/badge/VS_Code-20232A?style=for-the-badge&logo=visual%20studio%20code&logoColor=0078D4" alt="VS Code" /> 
 <img src="https://img.shields.io/badge/Discord-20232A?style=for-the-badge&logo=discord&logoColor=7289DA" alt="Discord" /> 
 <img src="https://img.shields.io/badge/GitHub-20232A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /> 
 <img src="https://img.shields.io/badge/Google%20Sheets-20232A?style=for-the-badge&logo=google-sheets&logoColor=34A853" alt="Google Sheets" /> 
-     
+<img src="https://img.shields.io/badge/Google%20Docs-20232A?style=for-the-badge&logo=google-sheets&logoColor=0D96F6" alt="Google Docs" />
+    
 → [Voltar ao topo](#topo)
 
 <span id="equipe">
@@ -105,8 +107,6 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 ## :clapper: Apresentação Final do Projeto
 
 Em breve...
-
-<span id="licenca">
 
 ## :page_with_curl: Licença
 
