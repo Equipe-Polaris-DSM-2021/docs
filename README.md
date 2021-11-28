@@ -46,7 +46,7 @@ Também na apresentação da terceira sprint foi acordado com o cliente que o do
 
 Atendendo ao desejo de se implementar um banco de dados no projeto, foi criado um CRUD de usuário, o qual conta com um cadastro, login e logout, além da possibilidade de alteração de dados e exclusão de conta. Nas imagens abaixo é possível observar o Modelo Lógico da tabela de usuário bem como um GIF demonstrando as funcionalidades relacionadas a ela.
 
-<p align="center"><img src="./modelo_logico.png" /></p>
+<p align="center"><img src="./modelo_logico.png" width='250px' /></p>
 <p align="center"><img src="./crud_usuario.gif" /></p>
 
 ### Requisitos não funcionais
