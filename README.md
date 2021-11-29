@@ -31,6 +31,8 @@ Assim como observado na terceira sprint, as dificuldades do time quanto a quest�
 ### RF 02: Serviço de geração de tiles dinâmicos
 
 Com a apresentação ao fim da sprint 3, foi confirmado que a utilização de tiles estáticos seria permitida e até mesmo adequada para implementação no projeto, dessa forma, nesta sprint foram aplicados esforços para novos testes e utilização de outras ferramentas e tecnologias que possibilitariam a geração destes tiles e uma possível integração ao projeto, porém este cenário se tranformou apenas na situação ideal, onde a real apresentada foi constituída apenas dos testes iniciais, sem a conclusão com integração ao projeto, fixando-se como a geração de tiles para uma única imagem.
+ 
+<p align="center"><img src="./tile.gif" /></p>
 
 ### RF 03: Exibição das imagens em cores naturais e realçadas
 
